@@ -1,0 +1,14 @@
+DESCRIPTION="Qt4 realtime communications framework"
+HOMEPAGE="http://decibel.kde.org/"
+PATCH_URI="0.7.0-cmake.patch"
+SVN_BRANCH="trunk/kdesupport/${PN}"
+SVN_REV=835190
+
+inherit kde4 qt4-cmake svn
+
+abi=0
+PKG_NAMES="${PN} libDecibel${abi} libDecibel-devel"
+#PKG_HINTS="bin lib devel"
+PKG_CONTENTS[0]="--exclude=cygDecibel-${abi}.dll usr/bin/ usr/lib/Decibel/ usr/share/"
+PKG_CONTENTS[1]="usr/bin/cygDecibel-${abi}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"

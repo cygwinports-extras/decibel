@@ -1,0 +1,123 @@
+decibel
+------------------------------------------
+Decibel is a realtime communications framework for Qt4, integrating 
+services like CTI (Computer Telephone Integration), VoIP (Voice over 
+IP), text based chat and instant messaging.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libQtCore4-4.4.0-1
+  libQtDBus4-4.4.0-1
+  libQtTapioca0-0.17.7-1
+  libQtTelepathy0-0.17.7-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080524-2
+  cmake-2.4.8-3
+  cygport-0.3.13-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  pkg-config-0.23a-2
+
+Canonical website:
+  http://decibel.kde.org/
+
+Canonical download:
+  http://websvn.kde.org/trunk/kdesupport/decibel/
+
+-------------------------------------------
+
+Build instructions:
+  unpack decibel-0.7.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./decibel-0.7.0-X.cygport all
+
+This will create:
+  /usr/src/decibel-0.7.0-X-src.tar.bz2
+  /usr/src/decibel-0.7.0-X.tar.bz2
+  /usr/src/libDecibel-devel-0.7.0-X.tar.bz2
+  /usr/src/libDecibel0-0.7.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(decibel)
+  /usr/bin/cygdecibel_pluginhelper-0.dll
+  /usr/bin/decibel.exe
+  /usr/bin/decibel_logger.exe
+  /usr/bin/textchannelgui.exe
+  /usr/lib/Decibel/decibel_defaultcmfor_demo.exe
+  /usr/lib/Decibel/decibel_deleteaccount_demo.exe
+  /usr/lib/Decibel/decibel_listaccounts_demo.exe
+  /usr/lib/Decibel/decibel_listcms_demo.exe
+  /usr/lib/Decibel/decibel_listcmsfor_demo.exe
+  /usr/lib/Decibel/decibel_registeraccount_demo.exe
+  /usr/lib/Decibel/decibel_setdefaultcmfor_demo.exe
+  /usr/lib/Decibel/decibel_setpresence_demo.exe
+  /usr/lib/Decibel/decibel_simpleclient_demo.exe
+  /usr/lib/Decibel/decibel_supportedprotocols_demo.exe
+  /usr/lib/Decibel/plugins/cygaccountconnector_simplistic.dll
+  /usr/lib/Decibel/plugins/cygcontactconnector_simplistic.dll
+  /usr/share/Decibel/components/org.kde.Decibel.Log.component
+  /usr/share/Decibel/components/org.kde.SimpleClient.TextChannel.component
+  /usr/share/Decibel/components/org.kde.textchannelgui.TextChannel.component
+  /usr/share/dbus-1/services/org.kde.Decibel.Daemon.service
+  /usr/share/dbus-1/services/org.kde.Decibel.Log.service
+  /usr/share/dbus-1/services/org.kde.SimpleClient.service
+  /usr/share/dbus-1/services/org.kde.textchannelgui.service
+  /usr/share/doc/decibel-0.7.0/COPYING
+  /usr/share/doc/decibel-0.7.0/ChangeLog
+  /usr/share/doc/decibel-0.7.0/INSTALL
+  /usr/share/doc/decibel-0.7.0/README
+  /usr/share/doc/decibel-0.7.0/TODO
+
+(libDecibel0)
+  /usr/bin/cygDecibel-0.dll
+
+(libDecibel-devel)
+  /usr/include/Decibel/AccountConnectorBase
+  /usr/include/Decibel/AccountData
+  /usr/include/Decibel/AccountDataSerialization
+  /usr/include/Decibel/AccountManager
+  /usr/include/Decibel/ChannelHandler
+  /usr/include/Decibel/ComponentManager
+  /usr/include/Decibel/ContactConnectorBase
+  /usr/include/Decibel/ContactManager
+  /usr/include/Decibel/DBusNames
+  /usr/include/Decibel/Errors
+  /usr/include/Decibel/ProtocolManager
+  /usr/include/Decibel/Types
+  /usr/include/Decibel/accountconnectorbase.h
+  /usr/include/Decibel/accountdata.h
+  /usr/include/Decibel/accountdataserialization.h
+  /usr/include/Decibel/accountmanager.h
+  /usr/include/Decibel/channelhandler.h
+  /usr/include/Decibel/componentmanager.h
+  /usr/include/Decibel/contactconnectorbase.h
+  /usr/include/Decibel/contactmanager.h
+  /usr/include/Decibel/dbusnames.h
+  /usr/include/Decibel/decibel_common_export.h
+  /usr/include/Decibel/decibel_export.h
+  /usr/include/Decibel/decibel_pluginhelper_export.h
+  /usr/include/Decibel/errors.h
+  /usr/include/Decibel/protocolmanager.h
+  /usr/include/Decibel/types.h
+  /usr/lib/libDecibel.dll.a
+  /usr/lib/libdecibel_pluginhelper.dll.a
+  /usr/lib/pkgconfig/Decibel.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.7.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
